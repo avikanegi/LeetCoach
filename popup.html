@@ -1,20 +1,50 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
+
 <head>
+    <meta charset="UTF-8">
     <title>LeetCoach</title>
+    <link rel="stylesheet" href="popup.css">
 </head>
 
 <body>
 
-    <h2> LeetCoach</h2>
+    <div class="container">
 
-    <h3>Problem</h3>
-    <p id="problem">Loading...</p>
+        <h1>🧠 LeetCoach</h1>
 
-    <h3>Difficulty</h3>
-    <p id="difficulty">Loading...</p>
+        <div class="card">
 
-    <button>Get Hint</button>
+            <h2 id="problem">Loading...</h2>
 
+            <span id="difficulty" class="difficulty">
+                Loading...
+            </span>
+
+            <hr>
+
+            <h3>Description</h3>
+
+            <p id="description">
+                Loading...
+            </p>
+
+            <button id="hintBtn">
+                💡 Get First Hint
+            </button>
+
+            <div id="hintBox" class="hint-box" style="display: none;">
+                <h3>💡 Hint</h3>
+                <p id="hintText"></p>
+            </div>
+
+        </div>
+
+    </div>
+
+    <script src="popup.js"></script>
+<script src="api.js"></script>
+<script src="popup.js"></script>
 </body>
+
 </html>
