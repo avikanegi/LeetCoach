@@ -14,11 +14,13 @@ const groq = new Groq({
 });
 
 app.get("/", (req, res) => {
+
     res.send("LeetCoach Backend is Running 🚀");
 });
 
 app.post("/hint", async (req, res) => {
 
+console.log(req.body.description);
     try {
 
         const problem = req.body;
